@@ -31,7 +31,14 @@ body {
   margin-left: 25px;
 }
 
+/* css for the banner image below navigation */
 
+.hero-banner{
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
 h1,
 h2,
 h3,
