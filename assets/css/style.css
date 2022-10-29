@@ -39,6 +39,52 @@ body {
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/* CSS for the main grid / page-wrapper */
+.page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(3, 1fr) ;
+  /* grid-template-areas: 
+  "aboutme aboutmeLeft"
+  "work workLeft"
+  "contactme contactmeLeft"; */
+}
+
+#about {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#work {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#contact {                                                                                                                                                                                                                                                                                                                                      
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+p{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  
+}
+
+.surfReport {
+  grid-column: 1/-1;
+  grid-row: 1/4;
+}
+.
 h1,
 h2,
 h3,
@@ -49,5 +95,5 @@ h6 {
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
