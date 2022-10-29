@@ -47,10 +47,7 @@ body {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: repeat(3, 1fr) ;
-  /* grid-template-areas: 
-  "aboutme aboutmeLeft"
-  "work workLeft"
-  "contactme contactmeLeft"; */
+  
 }
 
 #about {
@@ -74,15 +71,42 @@ p{
 }
 
 #projects {
+  /* margin: 0px 5%; */
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  
+  grid-template-areas: 
+  "surfreport surfreport"
+  "surfreport surfreport"
+  "surfreport surfreport"
+  "ledwall calculator"
+  "pastelpuzzels runbuddy";
 }
 
 .surfReport {
-  grid-column: 1/-1;
-  grid-row: 1/4;
+  grid-area: surfreport;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.ledWall {
+  grid-area: ledwall;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.pastelPuzzels {
+  grid-area: pastelpuzzels;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.runBuddy {
+  grid-area: runbuddy;
+  background-image: url("../images/02-run-buddy.jpg");
 }
 
 h1,
