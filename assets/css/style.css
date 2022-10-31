@@ -8,10 +8,19 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+/*  Header CSS starts here */
+.header{
+  background-color: #26354a;
+}
 .header h1{
   display: inline-block;
   font-size: 48px;
+  padding-left: 40px;
+  padding-right: 10px;
+  background-color: aqua;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
 
 .header nav {
@@ -29,11 +38,23 @@ body {
 .header nav ul li {
   display: inline-block;
   margin-left: 25px;
+   
 }
 
-.header nav ul li :hover{
-  background-color: blue;
+/* CSS for giving the navigation menu hovering effects and border */
+a{
+  color: aqua;
+  border: 2px solid aqua;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  
 }
+a:hover, a:active{
+  background-color: aqua;
+  color: #26354a;
+}
+
 /* css for the banner image below navigation */
 
 .hero-banner{
@@ -49,6 +70,7 @@ body {
   bottom: 15px;
   background-color: cyan;
 }
+
 /* CSS for the main grid / page-wrapper */
 .page-wrapper {
   margin: 0px 5%;
