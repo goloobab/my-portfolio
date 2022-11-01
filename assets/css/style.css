@@ -221,7 +221,7 @@ p {
 #projectThree:hover,
 #projectFour:hover,
 #projectFive:hover {
-  border: 5px solid #0659f3;
+  border: 5px solid #709af3;
 }
   
 /* Contact me section CSS code */
@@ -268,11 +268,17 @@ p {
 
 }
 
+
+
 /* CSS FOR THE RESPONSIVENESS */
 
 @media only screen and (max-width: 1000px) {
   nav {
     display: none;
+  }
+
+  #footer a {
+    padding: 5px 5px;
   }
 }
 
@@ -284,6 +290,10 @@ p {
 
   .hero-banner {
     height: 200px;
+  }
+
+  .page-section h2{
+    margin-bottom: 10px;
   }
 
   img {
@@ -317,16 +327,17 @@ p {
       "runbuddy";
   }
 
-  #footer ul li{
-    display: flex;
-    flex-direction: column;
-  }
-  /* #footer ul {
+  /* #footer a {
+    padding: 2px 2px;
+    
+  } */
+
+ 
+   #footer ul {
     list-style-type: none;
-  }
+   }
   
   #footer ul li {
-    display: inline-block;
-    margin-left: 45px;
-    } */
+    display: block;
+  }
 }
