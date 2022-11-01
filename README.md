@@ -20,6 +20,7 @@ The task was to refactor the codebase to follow accessibility standards using HT
 
 ## Screen Shots
 
+![screencapture-file-bootcamp-week-2-my-portfolio-](https://user-images.githubusercontent.com/26630637/199266895-1d31b5a4-5ece-42a0-9002-dc98f5186c72.png)
 
 ## Links
 Deployed project: https://goloobab.github.io/my-portfolio/
