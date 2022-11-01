@@ -17,7 +17,7 @@ body {
 
 .header h1 {
   display: inline-block;
-  font-size: 4vw;
+  font-size: 4.5vw;
   padding-left: 40px;
   padding-right: 10px;
   background-color: aqua;
@@ -125,10 +125,6 @@ p {
 
 }
 
-/* footer {
-  grid-area: contactinfo;
-  
-} */
 
 .page-section {
   display: flex;
@@ -143,43 +139,41 @@ p {
 
 #projectsGrid {
   grid-area: workprojects;
-  /* margin: 0px 5%;  */
-  /* border: 5px solid rgb(44, 32, 223); */
   display: grid;
   grid-gap: 8px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 200px);
   grid-template-areas:
-    "surfreport surfreport"
-    "surfreport surfreport"
-    "surfreport surfreport"
-    "ledwall calculator"
-    "pastelpuzzels runbuddy";
+    "firstproject firstproject"
+    "firstproject firstproject"
+    "firstproject firstproject"
+    "secondproject thirdproject"
+    "fourthproject fiftyproject";
 }
 
 #projectOne {
-  grid-area: surfreport;
+  grid-area: firstproject;
   background-image: url("https://user-images.githubusercontent.com/26630637/197610362-da29f0f1-4ab2-4327-bffa-192bff3b5bb6.png");
 
 }
 
 #projectTwo {
-  grid-area: ledwall;
+  grid-area: secondproject;
   background-image: url("../images/02-portfolio-1.jpg");
 }
 
 #projectThree {
-  grid-area: calculator;
+  grid-area: thirdproject;
   background-image: url("../images/coming-soon.jpg");
 }
 
 #projectFour {
-  grid-area: pastelpuzzels;
+  grid-area: fourthproject;
   background-image: url("../images/coming-soon.jpg");
 }
 
 #projectFive {
-  grid-area: runbuddy;
+  grid-area: fiftyproject;
   background-image: url("../images/coming-soon.jpg");
 }
 
@@ -280,17 +274,24 @@ p {
 }
 
 @media only screen and (max-width:600px) {
-  .hero-banner h2 {
+
+ h2{
+  float: left;
+ }
+   .hero-banner h2 {
     position: static;
     margin: 10px;
   }
 
   .hero-banner {
     height: 200px;
+    width: 100%;
   }
 
-  .page-section h2{
-    margin-bottom: 10px;
+  .page-section {
+    /* margin-bottom: 10px; */
+    display: flex;
+    justify-content: start;
   }
 
   img {
@@ -302,8 +303,8 @@ p {
 
   }
 
-  .page-wrapper {
-    grid-template-rows: none;
+   .page-wrapper {
+    grid-template-columns: 460px;
     grid-template-areas:
       "about"
       "aboutparagraph"
@@ -311,30 +312,30 @@ p {
       "workprojects"
       "contact"
       "contactinfo";
-  }
+  } 
 
   #projectsGrid {
     grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 480px;
+    grid-template-columns: 460px;
     grid-template-areas:
-      "surfreport"
-      "ledwall"
-      "calculator"
-      "pastelpuzzels"
-      "runbuddy";
+      "firstproject"
+      "secondproject"
+      "thirdproject"
+      "fourthproject"
+      "fiftyproject";
   }
 
-  /* #footer a {
+   #footer a {
     padding: 2px 2px;
     
-  } */
+  } 
 
  
-   #footer ul {
+    #footer ul {
     list-style-type: none;
    }
   
   #footer ul li {
     display: block;
-  }
+  }  
 }
