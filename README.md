@@ -2,8 +2,8 @@
 
 ## Description 
 
-This is static web site. This project was developed for Horiseon Social Solution Services a marketing agency to provide information about their services to the site visitors or customers.
-The task was to refactor the codebase to follow accessibility standards using HTML and CSS technologies and also optimize it for search engines.
+This project is developed as a means to showcase my skills as I work on the various projects in my web devlopment journey. The website will be updated as projects are completed. You are more than welcome to check out my creativity. Currently all projects are developed in HTML and CSS, more projects in other langauges will be uploaded soon.
+
 
 ## Challenges
 
