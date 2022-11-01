@@ -7,12 +7,15 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #eaedf1;
 }
+
 /*  Header CSS starts here */
-.header{
+.header {
   background-color: #26354a;
 }
-.header h1{
+
+.header h1 {
   display: inline-block;
   font-size: 48px;
   padding-left: 40px;
@@ -23,48 +26,54 @@ body {
 
 }
 
+/* CSS for the top navigation menu */
+
 .header nav {
   padding-top: 15px;
   margin-right: 20px;
-  float:right;
+  float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
 
-.header nav ul{
+.header nav ul {
   list-style-type: none;
 }
 
 .header nav ul li {
   display: inline-block;
   margin-left: 20px;
-   
+
 }
 
 /* CSS for giving the navigation menu hovering effects and border */
-.header nav ul li a {
+a {
+  
   color: aqua;
   border: 2px solid aqua;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
-  
+
 }
-a:hover, a:active{
+
+a:hover,
+a:active {
   background-color: aqua;
   color: #26354a;
 }
 
 /* css for the banner image below navigation */
 
-.hero-banner{
+.hero-banner {
   height: 600px;
   width: 100%;
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
 }
-.hero-banner h2{
+
+.hero-banner h2 {
   position: absolute;
   right: 70px;
   bottom: 15px;
@@ -73,14 +82,13 @@ a:hover, a:active{
 }
 
 /* CSS for the Avatar  */
-img{
+img {
   border: 4px solid aqua;
   border-radius: 4px;
-  /* padding: 5px; */
   position: absolute;
   right: 70px;
   bottom: 72px;
-  
+
 }
 
 
@@ -94,43 +102,47 @@ img{
   column-gap: 20px;
   grid-template-columns: 1fr 3fr;
   /* grid-template-rows: 1fr 4fr 1fr; */
-  grid-template-areas: 
-  "about aboutparagraph"
-  "work workprojects"
-  "contact contactinfo";
-  
+  grid-template-areas:
+    "about aboutparagraph"
+    "work workprojects"
+    "contact contactinfo";
+
 }
 
 #about {
   grid-area: about;
-  }
+}
 
-p{
+p {
   grid-area: aboutparagraph;
-  
+
 }
 
 #work {
   grid-area: work;
-  
-  }
 
-#contact {      
-  grid-area: contact;                                                                                                                                                                                                                                                                                                                                
-  
 }
 
-.page-section{
+#contact {
+  grid-area: contact;
+
+}
+
+/* footer {
+  grid-area: contactinfo;
+  
+} */
+
+.page-section {
   display: flex;
   justify-content: end;
   border-right: 5px solid #26354a;
 
 }
-#su{
-  grid-area: contactinfo;
-  border-color: #0659f3;
-  
-}
+
+
+
+/* CSS FOR THE PROJECTS / WORK */
 
 #projectsGrid {
   grid-area: workprojects;
@@ -140,18 +152,18 @@ p{
   grid-gap: 8px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 200px);
-  grid-template-areas: 
-  "surfreport surfreport"
-  "surfreport surfreport"
-  "surfreport surfreport"
-  "ledwall calculator"
-  "pastelpuzzels runbuddy";
-  }
+  grid-template-areas:
+    "surfreport surfreport"
+    "surfreport surfreport"
+    "surfreport surfreport"
+    "ledwall calculator"
+    "pastelpuzzels runbuddy";
+}
 
 #projectOne {
   grid-area: surfreport;
   background-image: url("../images/project-1.png");
-  
+
 }
 
 #projectTwo {
@@ -174,11 +186,11 @@ p{
   background-image: url("../images/coming-soon.jpg");
 }
 
- #projectOne,
- #projectTwo,
- #projectThree,
- #projectFour,
- #projectFive {
+#projectOne,
+#projectTwo,
+#projectThree,
+#projectFour,
+#projectFive {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,25 +200,52 @@ p{
   display: grid;
   align-content: center;
   position: relative;
-  
- }
 
-  .projectName{
+}
+
+.projectName {
   position: absolute;
-  background-color: #06ebf3;
+  background-color: aqua;
   color: blue;
   padding: 10px;
-  bottom: 15px;
-  } 
- 
- #projectOne:hover, #projectTwo:hover{
-  border: 5px solid #0659f3;
- }
+  bottom: 20px;
+  font-size: 24px;
+}
 
- /* Contact me section CSS code */
-#su{
-  display: grid;
-  justify-content: end;
+.projectName p{
+  font-size: 12px;
+}
+
+#projectOne:hover,
+#projectTwo:hover,
+#projectThree:hover,
+#projectFour:hover,
+#projectFive:hover {
+  border: 5px solid #0659f3;
+}
+  
+/* Contact me section CSS code */
+#footer ul {
+  list-style-type: none;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin-left: 45px;
+  }
+
+#footer a {
+  color: rgb(13, 19, 19);
+  border-bottom: 2px solid rgb(13, 19, 19);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:active {
+  background-color: rgb(41, 35, 35);
+  color: #f6f8fa;
 }
 
 h1,
@@ -219,58 +258,75 @@ h6 {
 
 }
 
-.page-section h2{
+.page-section h2 {
   font-size: 30px;
   padding-right: 10px;
 }
+
 p {
-    margin: 0;
-    
+  margin: 0;
+
 }
 
-
+/* CSS FOR THE RESPONSIVENESS */
 
 @media only screen and (max-width: 1000px) {
-  nav{
+  nav {
     display: none;
-    }
   }
+}
+
 @media only screen and (max-width:600px) {
-  .hero-banner h2{
+  .hero-banner h2 {
     position: static;
     margin: 10px;
   }
 
-  .hero-banner{
+  .hero-banner {
     height: 200px;
   }
-  img{
+
+  img {
     border: 4px solid aqua;
     border-radius: 4px;
     position: absolute;
     right: 50px;
     top: 115px;
-    
+
   }
-  .page-wrapper{
+
+  .page-wrapper {
     grid-template-rows: none;
-    grid-template-areas: 
-    "about"
-    "aboutparagraph"
-    "work"
-    "workprojects"
-    "contact"
-    "contactinfo";
+    grid-template-areas:
+      "about"
+      "aboutparagraph"
+      "work"
+      "workprojects"
+      "contact"
+      "contactinfo";
   }
+
   #projectsGrid {
-  grid-template-rows: 300px 300px 300px 300px 300px;
-  grid-template-columns: 480px;
-  grid-template-areas: 
-  "surfreport" 
-  "ledwall"
-  "calculator"
-  "pastelpuzzels"
-  "runbuddy";
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 480px;
+    grid-template-areas:
+      "surfreport"
+      "ledwall"
+      "calculator"
+      "pastelpuzzels"
+      "runbuddy";
   }
-}
+
+  #footer ul li{
+    display: flex;
+    flex-direction: column;
+  }
+  /* #footer ul {
+    list-style-type: none;
+  }
   
+  #footer ul li {
+    display: inline-block;
+    margin-left: 45px;
+    } */
+}
